@@ -8,6 +8,8 @@ let width = 100
 let inflationRate = 20
 let maxSize = 300
 let gameLength = 5000
+let clockId = 0
+let timeRemaining = 0
 
 function startGame() {
     console.log("Game Starting...")
@@ -15,7 +17,24 @@ function startGame() {
     startButton.setAttribute("disabled", "true")
     inflateButton.removeAttribute("disabled")
 
+    startClock()
     setTimeout(stopGame, gameLength)
+}
+
+function startClock() {
+    timeRemaining = gameLength
+    drawClock()
+    clockId = setInterval(drawClock, 1000)
+}
+
+function stopClock() {
+    clearInterval(clockId)
+}
+
+function drawClock() {
+    let countdownElem = document.getElementById("countdown")
+    countdownElem.innerText = (timeRemaining / 1000).toString()
+    timeRemaining -= 1000
 }
 
 function inflate() {
@@ -53,6 +72,6 @@ function stopGame() {
     clickCount = 0
     height = 120
     width = 100
-
+    stopClock()
     draw()
 }
