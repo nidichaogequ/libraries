@@ -1,6 +1,10 @@
+// Buttons
 let startButton = document.getElementById("start-button")
 let inflateButton = document.getElementById("inflate-button")
 
+// #region Game Functions and Data
+
+// Data
 let currentPopCount = 0
 let highestPopCount = 0
 let clickCount = 0
@@ -12,6 +16,7 @@ let gameLength = 5000
 let clockId = 0
 let timeRemaining = 0
 
+// Functions
 function startGame() {
     console.log("Game Starting...")
 
@@ -82,4 +87,12 @@ function stopGame() {
 
     stopClock()
     draw()
+}
+
+// #endregion
+let player = []
+
+function setPlayer(event) {
+    event.preventDefault()
+    console.log(event)
 }
