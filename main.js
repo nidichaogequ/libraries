@@ -90,9 +90,13 @@ function stopGame() {
 }
 
 // #endregion
-let player = []
+let players = []
+
 
 function setPlayer(event) {
     event.preventDefault()
-    console.log(event)
+    let form = event.target
+    
+    console.log(form.playerName.value + " is the current Player's Name")
+    let playerName = form.playerName.value
 }
