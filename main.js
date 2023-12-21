@@ -92,11 +92,20 @@ function stopGame() {
 // #endregion
 let players = []
 
-
 function setPlayer(event) {
     event.preventDefault()
     let form = event.target
     
-    console.log(form.playerName.value + " is the current Player's Name")
+    console.log(form.playerName.value + " is now the current Player's Name")
     let playerName = form.playerName.value
+
+    let currentPlayer = players.find(player => player.name == playerName)
+
+    if (!currentPlayer) {
+        currentPlayer = { name: playerName, topScore: 0 }
+    }
+
+    console.log(currentPlayer)
+
+    form.reset()
 }
