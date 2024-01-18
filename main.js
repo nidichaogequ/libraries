@@ -92,6 +92,7 @@ function stopGame() {
 }
 
 // #endregion
+
 let players = []
 loadPlayers()
 
@@ -112,6 +113,8 @@ function setPlayer(event) {
 
     console.log(currentPlayer)
     form.reset()
+    document.getElementById("game").classList.remove("hidden")
+    form.classList.add("hidden")
     draw()
 }
 

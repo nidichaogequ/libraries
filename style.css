@@ -8,3 +8,7 @@ body {
     background-color: red;
     border-radius: 75%;
 }
+
+.hidden {
+    display: none;
+}
