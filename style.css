@@ -1,5 +1,5 @@
 body {
-    background-color: green;
+    background-color: #fff78a;
 }
 
 .balloon {
@@ -9,6 +9,26 @@ body {
     border-radius: 75%;
 }
 
+.card {
+    background-color: #f0ffff;
+    padding: 1em;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, .3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hidden {
-    display: none;
+    display: none !important;
 }
