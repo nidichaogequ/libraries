@@ -2,6 +2,19 @@ body {
     background-color: #fff78a;
 }
 
+header {
+    margin: 3em 0;
+}
+
+.logo-container {
+    width: 50%;
+    margin: auto;
+}
+
+img {
+    max-width: 100%
+}
+
 .balloon {
     height: 120px;
     width: 100px;
@@ -14,17 +27,6 @@ body {
     padding: 1em;
     box-shadow: 2px 0 8px rgba(0, 0, 0, .3);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
