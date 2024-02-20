@@ -1,5 +1,11 @@
+:root {
+    --primary: #f393fd;
+    --dark: rgb(224, 217, 217);
+    --shadow: rgba(230, 36, 36, 0.3);
+}
+
 body {
-    background-color: #fff78a;
+    background-color: var(--dark);
 }
 
 header {
@@ -9,6 +15,7 @@ header {
 .logo-container {
     width: 50%;
     margin: auto;
+    filter: drop-shadow(2px, 0, 8px, var(--shadow));
 }
 
 img {
@@ -25,7 +32,7 @@ img {
 .card {
     background-color: #f0ffff;
     padding: 1em;
-    box-shadow: 2px 0 8px rgba(0, 0, 0, .3);
+    box-shadow: 2px 0 8px var(--shadow);
 }
 
 
