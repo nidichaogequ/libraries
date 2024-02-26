@@ -1,11 +1,13 @@
 :root {
-    --primary: #f393fd;
+    --primary: #f9bfff;
+    --secondary: #90e9ff;
     --dark: rgb(224, 217, 217);
-    --shadow: rgba(230, 36, 36, 0.3);
+    --shadow: 2px 4px 8px rgba(243, 147, 253, 1);
+    --corners: 4px;
 }
 
 body {
-    background-color: var(--dark);
+    background-color: var(--secondary);
 }
 
 header {
@@ -15,7 +17,12 @@ header {
 .logo-container {
     width: 50%;
     margin: auto;
-    filter: drop-shadow(2px, 0, 8px, var(--shadow));
+    filter: drop-shadow(var(--shadow));
+}
+
+main {
+    width: 50%;
+    margin: auto;
 }
 
 img {
@@ -26,13 +33,14 @@ img {
     height: 120px;
     width: 100px;
     background-color: red;
-    border-radius: 75%;
+    border-radius: 50%;
 }
 
 .card {
     background-color: #f0ffff;
     padding: 1em;
-    box-shadow: 2px 0 8px var(--shadow);
+    box-shadow: var(--shadow);
+    border-radius: var(--corners);
 }
 
 

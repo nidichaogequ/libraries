@@ -5,6 +5,7 @@
     <title>Balloon Pop</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header class="header">
@@ -13,7 +14,9 @@
         </div>
     </header>
 
-    <form class="card" id="player-form" onsubmit="setPlayer(event)">
+    <main class="card">
+
+    <form id="player-form" onsubmit="setPlayer(event)">
         <div>
             <label for="name">Player's Name:</label>
             <input type="text" name="playerName"  required>
@@ -48,5 +51,8 @@
     </section>
 
     <script src="main.js"></script>
+
+    </main>
+
 </body>
 </html>
