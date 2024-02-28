@@ -4,6 +4,7 @@
     --dark: rgb(224, 217, 217);
     --shadow: 2px 4px 8px rgba(243, 147, 253, 1);
     --corners: 4px;
+
 }
 
 body {
@@ -14,16 +15,6 @@ header {
     margin: 3em 0;
 }
 
-.logo-container {
-    width: 50%;
-    margin: auto;
-    filter: drop-shadow(var(--shadow));
-}
-
-main {
-    width: 50%;
-    margin: auto;
-}
 
 img {
     max-width: 100%
@@ -36,6 +27,11 @@ img {
     border-radius: 50%;
 }
 
+.container {
+    width: 50%;
+    margin: auto;
+}
+
 .card {
     background-color: #f0ffff;
     padding: 1em;
@@ -43,7 +39,9 @@ img {
     border-radius: var(--corners);
 }
 
-
+.shadow {
+    filter: drop-shadow(var(--shadow));
+}
 
 
 .hidden {
