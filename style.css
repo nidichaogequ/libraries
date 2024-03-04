@@ -1,14 +1,20 @@
 :root {
     --primary: #f9bfff;
-    --secondary: #90e9ff;
+    --primary-darken: #c12cff;
+    --bg: #90e9ff;
     --dark: rgb(224, 217, 217);
     --shadow: 2px 4px 8px rgba(243, 147, 253, 1);
     --corners: 4px;
+    --text-color: #080808;
+    --light: #fdfdfd;
 
 }
 
 body {
-    background-color: var(--secondary);
+    background-color: var(--bg);
+    font-family: 'Finger Paint', cursive;
+    font-size: 16pt;
+    color: var(--text-color);
 }
 
 header {
@@ -19,6 +25,8 @@ header {
 img {
     max-width: 100%
 }
+
+button {}
 
 .balloon {
     height: 120px;
@@ -33,7 +41,7 @@ img {
 }
 
 .card {
-    background-color: #f0ffff;
+    background-color: var(--light);
     padding: 1em;
     box-shadow: var(--shadow);
     border-radius: var(--corners);
@@ -43,6 +51,13 @@ img {
     filter: drop-shadow(var(--shadow));
 }
 
+.d-flex {
+    display: flex;
+}
+
+.d-flex.space-between {
+    justify-content: space-between;
+}
 
 .hidden {
     display: none !important;
