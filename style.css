@@ -26,13 +26,28 @@ img {
     max-width: 100%
 }
 
-button {}
+button {
+    background-color: var(--primary);
+    color: var(--text-color);
+    font-family: 'Finger Paint', cursive;
+    border: 1px solid var(--primary-darken);
+    border-radius: var(--corners);
+    box-shadow: var(--shadow);
+    text-transform: uppercase;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-darken);
+}
 
 .balloon {
     height: 120px;
     width: 100px;
     background-color: red;
     border-radius: 50%;
+    transition: all 0.2 ease;
 }
 
 .container {
