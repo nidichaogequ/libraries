@@ -26,6 +26,19 @@ img {
     max-width: 100%
 }
 
+form {
+    margin: 0;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    outline: none;
+    font-size: 14pt;
+    font-family: 'Finger Paint', cursive;
+}
+
 button {
     background-color: var(--primary);
     color: var(--text-color);
