@@ -2,7 +2,7 @@
     --primary: #f9bfff;
     --primary-darken: #c12cff;
     --bg: #90e9ff;
-    --dark: rgb(224, 217, 217);
+    --dark: rgb(34, 34, 34);
     --shadow: 2px 4px 8px rgba(243, 147, 253, 1);
     --corners: 4px;
     --text-color: #080808;
@@ -76,6 +76,14 @@ button:hover {
 
 .shadow {
     filter: drop-shadow(var(--shadow));
+}
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
+.text-light {
+    color: var(--light)
 }
 
 .d-flex {

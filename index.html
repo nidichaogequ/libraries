@@ -28,7 +28,22 @@
         <button type="submit">Enter</button>
     </form>
 
-    <section id="game" class="game hidden">
+<!-- TODO return class hidden to section below -->
+    <section id="game" class="game">
+        
+        <div class="card bg-dark text-light">
+            <div class="d-flex space-between">
+                <div>
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    <span id="player-name"></span>
+                </div>
+                <div>
+                    <span>High Score: </span>
+                    <span id="high-count">0</span>
+                </div>
+            </div>
+        </div>
+
         <div>
             <button onclick="changePlayer()">Change Player</button>
         </div>
@@ -38,10 +53,7 @@
     <button id="inflate-button" onclick="inflate()" disabled="true">Inflate (<span id="click-count"></span>)
     </button>
 
-    <div>
-        <span>High Score: </span>
-        <span id="high-count">0</span>
-    </div>
+
     <div>
         <span>Balloons Popped: </span>
         <span id="pop-count">0</span>
