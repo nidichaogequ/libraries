@@ -17,7 +17,7 @@
         </div>
     </header>
 
-    <main class="card container">
+    <main class="card container shadow-2">
 
     <form class="d-flex space-between" id="player-form" onsubmit="setPlayer(event)">
         <div>
@@ -29,9 +29,8 @@
     </form>
 
 <!-- TODO return class hidden to section below -->
-    <section id="game" class="game">
-        
-        <div class="card bg-dark text-light">
+    <section id="game" class="game hidden">
+        <div class="card bg-dark text-light shadow">
             <div class="d-flex space-between">
                 <div>
                     <i class="fa fa-user-circle-o" aria-hidden="true"></i>
@@ -44,30 +43,29 @@
             </div>
         </div>
 
-        <div>
-            <button onclick="changePlayer()">Change Player</button>
-        </div>
-    <div>
-    <button id="start-button" onclick="startGame()">START GAME</button>
+    <div class="d-flex space-around mt-2">
+        <button class="secondary-button" onclick="changePlayer()">Change Player</button>
+        <button id="start-button" onclick="startGame()">START GAME</button>
     </div>
+
+    <div class="hidden">
     <button id="inflate-button" onclick="inflate()" disabled="true">Inflate (<span id="click-count"></span>)
     </button>
 
 
-    <div>
-        <span>Balloons Popped: </span>
-        <span id="pop-count">0</span>
+        <div>
+            <span>Balloons Popped: </span>
+            <span id="pop-count">0</span>
+        </div>
+        <div>
+            <span>Time Remaining: </span>
+            <span id="countdown">0</span>
+        </div>
+        
+        <div id="balloon" class="balloon"></div>
     </div>
-    <div>
-        <span>Time Remaining: </span>
-        <span id="countdown">0</span>
-    </div>
-
-    <div id="balloon" class="balloon"></div>
     </section>
-
     <script src="main.js"></script>
-
     </main>
 
 </body>

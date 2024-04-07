@@ -1,17 +1,20 @@
 :root {
     --primary: #f9bfff;
     --primary-darken: #c12cff;
-    --bg: #90e9ff;
-    --dark: rgb(34, 34, 34);
-    --shadow: 2px 4px 8px rgba(243, 147, 253, 1);
+    --secondary: #90e9ff;
+    --secondary-darken: #006eff;
+    --dark: #222222;
+    --shadow: 2px 0 8px rgba(66, 66, 66, 0.6);
+    --shadow-2: 2px 4px 8px rgba(243, 147, 253, 1);
     --corners: 4px;
     --text-color: #080808;
     --light: #fdfdfd;
+    --dark-lighten: #535353;
 
 }
 
 body {
-    background-color: var(--bg);
+    background-color: var(--secondary);
     font-family: 'Finger Paint', cursive;
     font-size: 16pt;
     color: var(--text-color);
@@ -48,6 +51,16 @@ button {
     text-transform: uppercase;
     transition: all .2s ease;
     cursor: pointer;
+    padding: 1em;
+}
+
+.secondary-button {
+    background-color: var(--secondary);
+    border-color: var(--secondary-darken);
+}
+
+.secondary-button:hover {
+    background-color: var(--secondary-darken);
 }
 
 button:hover {
@@ -70,7 +83,6 @@ button:hover {
 .card {
     background-color: var(--light);
     padding: 1em;
-    box-shadow: var(--shadow);
     border-radius: var(--corners);
 }
 
@@ -78,8 +90,16 @@ button:hover {
     filter: drop-shadow(var(--shadow));
 }
 
+.shadow-2 {
+    filter: drop-shadow(var(--shadow-2))
+}
+
 .bg-dark {
     background-color: var(--dark);
+}
+
+.bg-dark-lighten {
+    background-color: var(--dark-lighten);
 }
 
 .text-light {
@@ -92,6 +112,34 @@ button:hover {
 
 .d-flex.space-between {
     justify-content: space-between;
+}
+
+.d-flex.space-around {
+    justify-content: space-around;
+}
+
+.mt-1 {
+    margin-top: .5em;
+}
+
+.mt-2 {
+    margin-top: 1em;
+}
+
+.mt-3 {
+    margin-top: 1.5em;
+}
+
+.mb-1 {
+    margin-bottom: .5em;
+}
+
+.mb-2 {
+    margin-bottom: 1em;
+}
+
+.mb-3 {
+    margin-bottom: 1.5em;
 }
 
 .hidden {
