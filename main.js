@@ -1,6 +1,6 @@
 // Buttons
-let startButton = document.getElementById("start-button")
-let inflateButton = document.getElementById("inflate-button")
+// let startButton = document.getElementById("start-button")
+// let inflateButton = document.getElementById("inflate-button")
 
 // #region Game Functions and Data
 
@@ -20,9 +20,10 @@ let currentPlayer = {}
 // Functions
 function startGame() {
     console.log("Game Starting...")
-
-    startButton.setAttribute("disabled", "true")
-    inflateButton.removeAttribute("disabled")
+    document.getElementById("game-controls").classList.remove("hidden");
+    document.getElementById("main-controls").classList.add("hidden");
+    // startButton.setAttribute("disabled", "true")
+    // inflateButton.removeAttribute("disabled")
 
     startClock()
     setTimeout(stopGame, gameLength)
@@ -71,15 +72,17 @@ function draw() {
     clickCountElement.innerText = clickCount.toString()
     popCountElement.innerText = currentPopCount.toString()
     highPopCountElement.innerText = currentPlayer.topScore.toString()
-    
+
     playerNameElement.innerText = currentPlayer.name
 }
 
 function stopGame() {
     console.log("It's been 3 seconds.")
-    inflateButton.setAttribute("disabled", "true")
-    startButton.removeAttribute("disabled")
-
+    // inflateButton.setAttribute("disabled", "true")
+    // startButton.removeAttribute("disabled")
+    document.getElementById("game-controls").classList.add("hidden");
+    document.getElementById("main-controls").classList.remove("hidden");
+    
     clickCount = 0
     height = 120
     width = 100
