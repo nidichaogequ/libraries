@@ -1,6 +1,3 @@
-// Buttons
-// let startButton = document.getElementById("start-button")
-// let inflateButton = document.getElementById("inflate-button")
 
 // #region Game Functions and Data
 
@@ -20,10 +17,9 @@ let currentPlayer = {}
 // Functions
 function startGame() {
     console.log("Game Starting...")
+
     document.getElementById("game-controls").classList.remove("hidden");
     document.getElementById("main-controls").classList.add("hidden");
-    // startButton.setAttribute("disabled", "true")
-    // inflateButton.removeAttribute("disabled")
 
     startClock()
     setTimeout(stopGame, gameLength)
@@ -77,9 +73,8 @@ function draw() {
 }
 
 function stopGame() {
-    console.log("It's been 3 seconds.")
-    // inflateButton.setAttribute("disabled", "true")
-    // startButton.removeAttribute("disabled")
+    console.log("It's been " + gameLength / 1000 + " seconds. Ending game.");
+
     document.getElementById("game-controls").classList.add("hidden");
     document.getElementById("main-controls").classList.remove("hidden");
     
