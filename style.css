@@ -67,6 +67,31 @@ button:hover {
     background-color: var(--primary-darken);
 }
 
+.pump {
+    height: 130px;
+    width: 180px;
+    position: relative;
+}
+
+.handle {
+    height: 10px;
+    width: 80px;
+    background-color: var(--dark-lighten);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.handle::before {
+    content: "";
+    background-color: var(--dark-lighten);
+    width: 10px;
+    height: 80px;
+    display: block;
+}
+
 .balloon {
     height: 120px;
     width: 100px;
