@@ -68,6 +68,7 @@ button:hover {
 }
 
 .pump {
+    margin-top: 80px;
     height: 130px;
     width: 180px;
     position: relative;
@@ -78,10 +79,12 @@ button:hover {
     width: 80px;
     background-color: var(--dark-lighten);
     position: absolute;
-    top: 0;
+    top: -80px;
     left: 0;
     display: flex;
     justify-content: center;
+    transition: all .05s linear;
+    z-index: 1;
 }
 
 .handle::before {
@@ -92,12 +95,26 @@ button:hover {
     display: block;
 }
 
+.pump:active .handle {
+    top: -20px;
+}
+
+.pump-box {
+    background-color: var(--primary);
+    height: 130px;
+    width: 180px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    z-index: 2;
+    position: absolute;
+}
+
 .balloon {
     height: 120px;
     width: 100px;
     background-color: red;
     border-radius: 50%;
-    transition: all 0.2 ease;
+    transition: all .2s ease;
 }
 
 .container {
