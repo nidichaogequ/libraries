@@ -80,7 +80,7 @@ button:hover {
     background-color: var(--dark-lighten);
     position: absolute;
     top: -80px;
-    left: 0;
+    left: 50px;
     display: flex;
     justify-content: center;
     transition: all .05s linear;
