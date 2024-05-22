@@ -49,8 +49,7 @@
     </div>
 
     <div id="game-controls" class="hidden">
-    <button id="inflate-button" onclick="inflate()">Inflate (<span id="click-count"></span>)
-    </button>
+    <button id="inflate-button" onclick="inflate()">Inflate</button>
 
 
         <div>
@@ -65,7 +64,9 @@
         <div class="d-flex">
             <div class="pump" onclick="inflate()">
                 <div class="handle"></div>
-                <div class="pump-box"></div>
+                <div class="pump-box">
+                    <span id="click-count"></span>
+                </div>
             </div>
             <div id="balloon" class="balloon"></div>
         </div>

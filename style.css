@@ -107,6 +107,17 @@ button:hover {
     border-top-left-radius: 20px;
     z-index: 2;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    color: var(--light);
+}
+
+.pump-box span {
+    background-color: var(--dark-lighten);
+    padding: .5em;
+    border-radius: var(--corners);
 }
 
 .balloon {
