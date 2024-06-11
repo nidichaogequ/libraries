@@ -133,7 +133,8 @@ button:hover {
     animation: balloon-float 5s ease-in-out infinite;
     align-self: flex-end;
     margin: 0 auto;
-    box-shadow: inset -10px -10px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: inset -10px -10px 12px #0000004d, inset 10px 10px 12px #0000004d;
+    background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(169, 104, 255, 1) 37%, rgba(252, 70, 107, 1) 100%);
 }
 
 @keyframes balloon-float {
