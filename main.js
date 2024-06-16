@@ -49,6 +49,8 @@ function inflate() {
     
     if (height >= maxSize) {
         console.log("Balloon Popped")
+        let balloonElement = document.getElementById("balloon")
+        balloonElement.classList.add("one")
         currentPopCount++
         height = 50
         width = 30

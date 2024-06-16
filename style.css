@@ -137,6 +137,22 @@ button:hover {
     background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(169, 104, 255, 1) 37%, rgba(252, 70, 107, 1) 100%);
 }
 
+.balloon.one {
+    filter: hue-rotate(130deg);
+}
+
+.balloon.two {
+    filter: hue-rotate(225deg);
+}
+
+.balloon.three {
+    filter: hue-rotate(275deg);
+}
+
+.balloon.four {
+    filter: hue-rotate(325deg);
+}
+
 @keyframes balloon-float {
 
     0%,
