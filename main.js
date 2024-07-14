@@ -48,7 +48,11 @@ function inflate() {
     clickCount++
     height += inflationRate
     width += inflationRate
-    
+    checkBalloonPop()
+    draw()
+}
+
+function checkBalloonPop() {
     if (height >= maxSize) {
         console.log("Balloon Popped")
         let balloonElement = document.getElementById("balloon")
@@ -59,7 +63,6 @@ function inflate() {
         height = 50
         width = 30
     }
-    draw()
 }
 
 function getRandomColor() {
