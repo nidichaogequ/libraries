@@ -13,6 +13,10 @@
 
 }
 
+.unselectable {
+    user-select: none;
+}
+
 body {
     background-color: var(--secondary);
     font-family: 'Finger Paint', cursive;
@@ -25,12 +29,13 @@ header {
 }
 
 img {
-    max-width: 100%
+    max-width: 100%;
 }
 
 form {
     margin: 0;
 }
+
 
 input {
     background-color: transparent;
@@ -49,6 +54,7 @@ button {
     border-radius: var(--corners);
     box-shadow: var(--shadow);
     text-transform: uppercase;
+    user-select: none;
     transition: all .2s ease;
     cursor: pointer;
     padding: 1em;

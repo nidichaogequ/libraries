@@ -11,7 +11,7 @@
 
 <body>
 
-    <header class="header">
+    <header class="header unselectable">
         <div class="container shadow">
             <img src="balloon-pop-logo.png" alt="Balloon Pop Logo">
         </div>
@@ -30,7 +30,7 @@
 
 
     <section id="game" class="game hidden">
-        <div class="card bg-dark text-light shadow">
+        <div class="card bg-dark text-light shadow unselectable">
             <div class="d-flex space-between">
                 <div>
                     <i class="fa fa-user-circle-o" aria-hidden="true"></i>
@@ -48,8 +48,7 @@
         <button id="start-button" onclick="startGame()">START GAME</button>
     </div>
 
-    <div id="game-controls" class="hidden">
-
+    <div id="game-controls" class="hidden unselectable mt-2">
 
         <div>
             <span>Balloons Popped: </span>
@@ -76,7 +75,7 @@
     <script src="main.js"></script>
     </main>
 
-     <div id="scoreboard" class="container card mt-2 shadow">
+     <div id="scoreboard" class="container card mt-2 shadow-2 unselectable">
         <h3 class="text-center">Scoreboard</h3>
         <div class="d-flex space-between">
             <span>
