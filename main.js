@@ -165,7 +165,7 @@ function drawScoreboard() {
         template += `
         <div class="d-flex space-between">
             <span>
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-user" aria-hidden="true"></i>
                 ${player.name}
             </span>
             <span>High Score: ${player.topScore}</span>
